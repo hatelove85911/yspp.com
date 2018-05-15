@@ -11,52 +11,193 @@
 		<link rel="icon" href="/yspp.ico" type="image/x-icon">		
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="vendor/jquery.fullpage.min.css" />
-		<link rel="stylesheet" href="yspp.css" />
-
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdn.bootcss.com/jquery.flipster/1.1.2/jquery.flipster.min.css" rel="stylesheet">
+		<link href="yspp2.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<div id="fullpage">
-			<div class="section">
-				<canvas id="logocanvas"></canvas>
-			</div>
-			<div class="section">
-				<div class="hackerprompt">
-					<p class="typewriter" data-text="&gt; 我们知道什么最吸引你,看看我们的黑科技"> <span class="blink_caret"></span></p>
-				</div>
-				<div class="arrow">
-                    <i class="down"></i>
-                </div>					
-			</div>
-			<div class="section">
-				<div class="yzmautoshowcase">
-					<embed src='http://player.youku.com/player.php/sid/XMzU4NzQyNjQzNg==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash' isShowRelatedVideo='false' isAutoPlay='true'></embed>
-				</div>
-			</div>
-			<div class="section">
-				<div class="hackerprompt">
-					<p class="typewriter" data-text="&gt; 屌不屌? 还行还行,验证码自动只是小菜一碟,继续往下看"> <span class="blink_caret"></span></p>
-				</div>
-				<div class="arrow">
-                    <i class="down"></i>
-                </div>					
-			</div>	
-			<div class="section">
-				<section id="header" class="main">
-					<header>
-						<h1>普通vs我们</h1>
-					</header>
-				</section>	
-			</div>
-			<div class="section">
-				<section id="header" class="main">
-					<header>
-						<h1>我们敢晒单</h1>
-					</header>
-				</section>	
-			</div>		
+		<div class="header">
+			<a class="logo" href="/">
+				<img  src="images/logo.png">
+			</a>
+			<span>羽山代拍</span>
 		</div>
-		<div class="contact_methods">
+		<div id="fullpage">
+			<div class="section home">
+				<h1 class="slogan">
+					<span class="cycleSlogan" data-text="最真实;最专业;最认真"> </span><span class="typed-cursor">|</span>
+					<br>
+					拍牌我们是专业的
+					<br>
+					<a class="btn btn-default btn-lg" href="#contact_us" role="button">联系我们</a>
+
+<!-- 					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-2 col-md-offset-2">
+								<div class="feature">
+									<div class="icon-wrapper">										
+										<img class="feature_target" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAB9JREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAL4NIQAAAWDknZcAAAAASUVORK5CYII=">									
+									</div>
+									<h4>中标率</h4>
+									<p class="description">中标率稳定在20%以上, 其他黄牛宣传的90%都是假的</p>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="feature">
+									<div class="icon-wrapper">										
+										<img class="feature_magic" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAB9JREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAL4NIQAAAWDknZcAAAAASUVORK5CYII=">
+									</div>
+									<h4>黑科技</h4>
+									<p class="description">验证码自动识别, 绝对高科技</p>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="feature">
+									<div class="icon-wrapper">										
+										<img class="feature_software" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAB9JREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAL4NIQAAAWDknZcAAAAASUVORK5CYII=">
+									</div>
+									<h4>自研软件</h4>
+									<p class="description">软件工程师编写, 反复测试</p>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="feature">
+									<div class="icon-wrapper">
+										<img class="feature_secure" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAB9JREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAL4NIQAAAWDknZcAAAAASUVORK5CYII=">										
+									</div>
+									<div class="feature_secure"></div>
+									<h4>真实</h4>
+									<p class="description">我们提前晒单, 不能作假</p>
+								</div>
+							</div>
+						</div>
+					</div>	 -->				
+				</h1>
+			</div>
+			<div class="section features">
+				<h2 class="section-header">特点</h2>
+				<div class="featurelist">
+					<ul>
+						<li>
+							<div class="feature">
+								<div class="icons_showbids"></div>
+								<p>真实源于晒单</p>
+								<p>blahblhahalaha</p>
+							</div>
+						</li>
+						<li>
+							<div class="feature">
+								<div class="icons_magic"></div>
+								<p>黑科技</p>
+								<p>blahblhahalaha</p>
+								<div>play video</div>
+							</div>
+						</li>
+						<li>
+							<div class="feature">
+								<div class="icons_software"></div>
+								<p>自研软件</p>
+								<p>blahblhahalaha</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="section plans">
+				<h2 class="section-header">价格</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="plan-wrapper">
+								<div class="icons_saving"></div>
+								<div class="plan normal">
+									<p class="category">高性价比</p>
+									<p class="price">12000元</p>
+									<ul class="desc-items">
+										<li>3次不中赔200元</li>
+										<li>漏拍赔500元</li>
+										<li>拍中再付款</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="plan-wrapper">
+								<div class="icons_vip"></div>
+								<div class="plan vip">
+									<p class="category">VIP</p>
+									<p class="price">15000元</p>
+									<ul class="desc-items">
+										<li>3次不中赔500元</li>
+										<li>漏拍赔500元</li>
+										<li>拍中再付款</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="plan-wrapper">
+								<div class="icons_super"></div>
+								<div class="plan golden">
+									<p class="category">超级至尊</p>
+									<p class="price">20000元</p>
+									<ul class="desc-items">
+										<li>3次不中赔1000元</li>
+										<li>漏拍赔500元</li>
+										<li>拍中再付款</li>
+									</ul>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section history">
+				<h2 class="section-header">历史战绩</h2>
+				<table class="table table-hover historyshow">
+					<thead><tr><th>月份</th><th>中标/总数</th><th>中标率</th></tr></thead>
+					<tbody>
+					  <tr><td>201804</td><td>14/61</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>1/50</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>23/73</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>12/81</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>18/79</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>25/83</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>0/95</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>23/106</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>7/101</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>16/107</td><td>47%</td></tr>
+					  <tr><td>201804</td><td>53/111</td><td>47%</td></tr>
+					</tbody>
+				  
+				</table>
+			</div>
+			<div class="section contact_us" id="contact_us">
+				<h2 class="section-header">联系方式</h2>
+				<table>
+					<tr>
+						<td>
+							<a class="button" href="tel:17621343858">&#128241;17621343858</a>
+						</td>
+						<td class="taobao">
+							<a class="button" href="https://item.taobao.com/item.htm?spm=a230r.1.14.16.79796f4194uQ3o&id=540326893336&ns=1&abbucket=13#detail">淘宝店</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="gzh">
+							<p>微信公众号</p>
+							<img src="images/gzh_qr.jpg">
+						</td>
+						<td class="wxh">
+							<p>微信联系人</p>
+							<img src="images/wxh_qr.png">	
+						</td>
+					</tr>
+				</table>
+			</div>	
+		</div>
+<!-- 		<div class="contact_methods">
 			<p class="trigger">联系方式</p>
 			<table class="contact_methods_table">
 				<tr>
@@ -76,11 +217,11 @@
 					<td><img src="images/wxh_qr.png" width="100px" height="100px"></td>
 				</tr>
 			</table>
-		</div>
+		</div> -->
 
 		<!-- Scripts -->
-		<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-		<script src="vendor/jquery.fullpage.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery.flipster/1.1.2/jquery.flipster.min.js"></script>
 
 		<script>
 			$(document).ready(function() {
@@ -91,7 +232,7 @@
 						setTimeout(function() {
 							real.nodeValue = wholetext.slice(0, real.length+1);
 							typewritereffect(el, wholetext)
-						}, 90)
+						}, 200)
 					}
 				}
 
@@ -120,278 +261,58 @@
 					        var wholetext = $(el).attr("data-text")
 					        typewritereffect(el, wholetext)
 					    }
-				    })
-
+				    })				    
 				}
 
 
-				$('#fullpage').fullpage({
-					afterLoad: checkAnimation
-				});
+
+				function cycleSlogan() {
+
+					function cycleTypeWriterEffect(el, wholetext, forward) {
+						var real = $(el).get(0).childNodes[0]
+						var realtext = real.nodeValue === " " ? "" : real.nodeValue
+
+						// erase
+						if (realtext.length < wholetext.length && forward) {
+							setTimeout(function() {
+								real.nodeValue = wholetext.slice(0, realtext.length+1);
+								cycleTypeWriterEffect(el, wholetext, true)
+							}, 100)
+						} else if(realtext.length > 0) {
+							setTimeout(function() {
+								real.nodeValue = wholetext.slice(0, realtext.length-1);
+								cycleTypeWriterEffect(el, wholetext, false)
+							}, realtext.length === wholetext.length ? 1000: 100)
+						}
+					}
+
+				    var $cycleSlogan = $('.cycleSlogan');
+
+				    var texts = $cycleSlogan.attr("data-text").split(";")
+				    var count = 0
+				    setInterval(function() {
+				    	 $cycleSlogan.get(0).childNodes[0].nodeValue = " "
+				    	 var wholetext = texts[count]
+				    	 cycleTypeWriterEffect($cycleSlogan, wholetext, true)
+				    	 if (++count > 2) {
+				    	 	count = 0
+				    	 }
+				    }, 2000)
+				}
+
+				cycleSlogan();
+				$('.featurelist').flipster();
+				// $('#fullpage').fullpage({
+				// 	verticalCentered: false,
+				// 	// slidesNavPosition: 'bottom',]
+				// 	sectionsColor: ['#ffffff', '#69d3c2', '#526add', '#617be5', '#617be5', '#617be5'],
+				// 	navigation: true,
+				// 	offsetSections: true,
+				// 	afterLoad: checkAnimation,
+				// 	afterRender: cycleSlogan,
+				// 	fixedElements: '#header',
+				// });
 			});
-		</script>
-
-		<!-- thunder text effect -->
-		<script>
-			function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-			var canvas = void 0,
-			    ctx = void 0,
-			    w = void 0,
-			    h = void 0,
-			    thunder = void 0,
-			    text = void 0,
-			    particles = void 0,
-			    input = void 0;
-
-			function Thunder(options) {
-			    var _this = this;
-
-			    options = options || {};
-			    this.lifespan = options.lifespan || Math.round(Math.random() * 10 + 10);
-			    this.maxlife = this.lifespan;
-			    this.color = options.color || '#fefefe';
-			    this.glow = options.glow || '#2323fe';
-			    this.x = options.x || Math.random() * w;
-			    this.y = options.y || Math.random() * h;
-			    this.width = options.width || 2;
-			    this.direct = options.direct || Math.random() * Math.PI * 2;
-			    this.max = options.max || Math.round(Math.random() * 10 + 20);
-			    this.segments = [].concat(_toConsumableArray(new Array(this.max))).map(function () {
-			        return {
-			            direct: _this.direct + (Math.PI * Math.random() * 0.2 - 0.1),
-			            length: Math.random() * 20 + 80,
-			            change: Math.random() * 0.04 - 0.02
-			        };
-			    });
-
-			    this.update = function (index, array) {
-			        this.segments.forEach(function (s) {
-			            (s.direct += s.change) && Math.random() > 0.96 && (s.change *= -1);
-			        });
-			        this.lifespan > 0 && this.lifespan-- || this.remove(index, array);
-			    };
-
-			    this.render = function (ctx) {
-			        if (this.lifespan <= 0) return;
-			        ctx.beginPath();
-			        ctx.globalAlpha = this.lifespan / this.maxlife;
-			        ctx.strokeStyle = this.color;
-			        ctx.lineWidth = this.width;
-			        ctx.shadowBlur = 32;
-			        ctx.shadowColor = this.glow;
-			        ctx.moveTo(this.x, this.y);
-			        var prev = { x: this.x, y: this.y };
-			        this.segments.forEach(function (s) {
-			            var x = prev.x + Math.cos(s.direct) * s.length;
-			            var y = prev.y + Math.sin(s.direct) * s.length;
-			            prev = { x: x, y: y };
-			            ctx.lineTo(x, y);
-			        });
-			        ctx.stroke();
-			        ctx.closePath();
-			        ctx.shadowBlur = 0;
-			        var strength = Math.random() * 80 + 40;
-			        var light = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, strength);
-			        light.addColorStop(0, 'rgba(250, 200, 50, 0.6)');
-			        light.addColorStop(0.1, 'rgba(250, 200, 50, 0.2)');
-			        light.addColorStop(0.4, 'rgba(250, 200, 50, 0.06)');
-			        light.addColorStop(0.65, 'rgba(250, 200, 50, 0.01)');
-			        light.addColorStop(0.8, 'rgba(250, 200, 50, 0)');
-			        ctx.beginPath();
-			        ctx.fillStyle = light;
-			        ctx.arc(this.x, this.y, strength, 0, Math.PI * 2);
-			        ctx.fill();
-			        ctx.closePath();
-			    };
-
-			    this.remove = function (index, array) {
-			        array.splice(index, 1);
-			    };
-			}
-
-			function Spark(options) {
-			    options = options || {};
-			    this.x = options.x || w * 0.5;
-			    this.y = options.y || h * 0.5;
-			    this.v = options.v || { direct: Math.random() * Math.PI * 2, weight: Math.random() * 14 + 2, friction: 0.88 };
-			    this.a = options.a || { change: Math.random() * 0.4 - 0.2, min: this.v.direct - Math.PI * 0.4, max: this.v.direct + Math.PI * 0.4 };
-			    this.g = options.g || { direct: Math.PI * 0.5 + (Math.random() * 0.4 - 0.2), weight: Math.random() * 0.25 + 0.25 };
-			    this.width = options.width || Math.random() * 3;
-			    this.lifespan = options.lifespan || Math.round(Math.random() * 20 + 40);
-			    this.maxlife = this.lifespan;
-			    this.color = options.color || '#feca32';
-			    this.prev = { x: this.x, y: this.y };
-
-			    this.update = function (index, array) {
-			        this.prev = { x: this.x, y: this.y };
-			        this.x += Math.cos(this.v.direct) * this.v.weight;
-			        this.x += Math.cos(this.g.direct) * this.g.weight;
-			        this.y += Math.sin(this.v.direct) * this.v.weight;
-			        this.y += Math.sin(this.g.direct) * this.g.weight;
-			        this.v.weight > 0.2 && (this.v.weight *= this.v.friction);
-			        this.v.direct += this.a.change;
-			        (this.v.direct > this.a.max || this.v.direct < this.a.min) && (this.a.change *= -1);
-			        this.lifespan > 0 && this.lifespan--;
-			        this.lifespan <= 0 && this.remove(index, array);
-			    };
-
-			    this.render = function (ctx) {
-			        if (this.lifespan <= 0) return;
-			        ctx.beginPath();
-			        ctx.globalAlpha = this.lifespan / this.maxlife;
-			        ctx.strokeStyle = this.color;
-			        ctx.lineWidth = this.width;
-			        ctx.moveTo(this.x, this.y);
-			        ctx.lineTo(this.prev.x, this.prev.y);
-			        ctx.stroke();
-			        ctx.closePath();
-			    };
-
-			    this.remove = function (index, array) {
-			        array.splice(index, 1);
-			    };
-			}
-
-			function Particles(options) {
-			    options = options || {};
-			    this.max = options.max || Math.round(Math.random() * 10 + 10);
-			    this.sparks = [].concat(_toConsumableArray(new Array(this.max))).map(function () {
-			        return new Spark(options);
-			    });
-
-			    this.update = function () {
-			        var _this2 = this;
-
-			        this.sparks.forEach(function (s, i) {
-			            return s.update(i, _this2.sparks);
-			        });
-			    };
-
-			    this.render = function (ctx) {
-			        this.sparks.forEach(function (s) {
-			            return s.render(ctx);
-			        });
-			    };
-			}
-
-			function Text(options) {
-			    options = options || {};
-			    var pool = document.createElement('canvas');
-			    var buffer = pool.getContext('2d');
-			    pool.width = w;
-			    buffer.fillStyle = '#000000';
-			    buffer.fillRect(0, 0, pool.width, pool.height);
-
-			    this.size = options.size || 100;
-			    this.copy = (options.copy || 'Hello!') + ' ';
-			    this.color = options.color || '#cd96fe';
-			    this.delay = options.delay || 1;
-			    this.basedelay = this.delay;
-			    buffer.font = this.size + 'px Comic Sans MS';
-			    this.bound = buffer.measureText(this.copy);
-			    this.bound.height = this.size * 1.5;
-			    this.x = options.x || w * 0.5 - this.bound.width * 0.5;
-			    this.y = options.y || h * 0.5 - this.size * 0.5;
-
-			    buffer.strokeStyle = this.color;
-			    buffer.strokeText(this.copy, 0, this.bound.height * 0.8);
-			    this.data = buffer.getImageData(0, 0, this.bound.width, this.bound.height);
-			    this.index = 0;
-
-			    this.update = function () {
-			        if (this.index >= this.bound.width) {
-			            this.index = 0;
-			            return;
-			        }
-			        var data = this.data.data;
-			        for (var i = this.index * 4; i < data.length; i += 4 * this.data.width) {
-			            var bitmap = data[i] + data[i + 1] + data[i + 2] + data[i + 3];
-			            if (bitmap > 255 && Math.random() > 0.96) {
-			                var x = this.x + this.index;
-			                var y = this.y + i / this.bound.width / 4;
-			                thunder.push(new Thunder({
-			                    x: x,
-			                    y: y
-			                }));
-			                Math.random() > 0.5 && particles.push(new Particles({
-			                    x: x,
-			                    y: y
-			                }));
-			            }
-			        }
-			        if (this.delay-- < 0) {
-			            this.index++;
-			            this.delay += this.basedelay;
-			        }
-			    };
-
-			    this.render = function (ctx) {
-			        ctx.putImageData(this.data, this.x, this.y, 0, 0, this.index, this.bound.height);
-			    };
-			}
-
-			function loop() {
-			    update();
-			    render();
-			    requestAnimationFrame(loop);
-			}
-
-			function update() {
-			    text.update();
-			    thunder.forEach(function (l, i) {
-			        return l.update(i, thunder);
-			    });
-			    particles.forEach(function (p) {
-			        return p.update();
-			    });
-			}
-
-			function render() {
-			    ctx.globalCompositeOperation = 'source-over';
-			    ctx.globalAlpha = 1;
-			    ctx.fillStyle = '#000000';
-			    ctx.fillRect(0, 0, w, h);
-			    //
-			    ctx.globalCompositeOperation = 'screen';
-			    text.render(ctx);
-			    thunder.forEach(function (l) {
-			        return l.render(ctx);
-			    });
-			    particles.forEach(function (p) {
-			        return p.render(ctx);
-			    });
-			}
-
-			(function () {
-			    //
-			    canvas = document.getElementById('logocanvas');
-			    ctx = canvas.getContext('2d');
-			    w = window.innerWidth;
-			    h = window.innerHeight;
-			    canvas.width = w;
-			    canvas.height = h;
-			    thunder = [];
-			    particles = [];
-			    //
-			    text = new Text({
-			        copy: '羽山工作室'
-			    });
-			    canvas.addEventListener('click', function (e) {
-			        var x = e.clientX;
-			        var y = e.clientY;
-			        thunder.push(new Thunder({
-			            x: x,
-			            y: y
-			        }));
-			        particles.push(new Particles({
-			            x: x,
-			            y: y
-			        }));
-			    });
-			    loop();
-			})();			
-
 		</script>
 	
 		<!--mylivechat-->
