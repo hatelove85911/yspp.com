@@ -16,12 +16,13 @@
 		<link href="yspp2.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<div class="header">
-			<a class="logo" href="/">
-				<img  src="images/logo.png">
-			</a>
-			<span>羽山代拍</span>
-		</div>
+	<!-- 		<div class="header">
+				<a class="logo" href="/">
+					<img  src="images/logo.png">
+				</a>
+				<span>羽山代拍</span>
+			</div> -->
+
 		<div id="fullpage">
 			<div class="section home">
 				<h1 class="slogan">
@@ -81,23 +82,24 @@
 						<li>
 							<div class="feature">
 								<div class="icons_showbids"></div>
-								<p>真实源于晒单</p>
-								<p>blahblhahalaha</p>
+								<p class="feature-title">真实源于晒单</p>
+								<p class="feature-desc">blahblhahalaha</p>
 							</div>
 						</li>
 						<li>
 							<div class="feature">
 								<div class="icons_magic"></div>
-								<p>黑科技</p>
-								<p>blahblhahalaha</p>
-								<div>play video</div>
+								<p class="feature-title">黑科技</p>
+								<p class="feature-desc">blahblhahalaha</p>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hightechvideo" data-whatever="@mdo">play video</button>
+
 							</div>
 						</li>
 						<li>
 							<div class="feature">
 								<div class="icons_software"></div>
-								<p>自研软件</p>
-								<p>blahblhahalaha</p>
+								<p class="feature-title">自研软件</p>
+								<p class="feature-desc">blahblhahalaha</p>
 							</div>
 						</li>
 					</ul>
@@ -197,30 +199,25 @@
 				</table>
 			</div>	
 		</div>
-<!-- 		<div class="contact_methods">
-			<p class="trigger">联系方式</p>
-			<table class="contact_methods_table">
-				<tr>
-					<th>手机号↓</th>
-					<th>淘宝店↓</th>
-				</tr>		
-				<tr>
-					<td><a href="tel:17621343858">17621343858</a></td>
-					<td><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.16.79796f4194uQ3o&id=540326893336&ns=1&abbucket=13#detail">去淘宝店</a></td>
-				</tr>
-				<tr>
-					<th>公众号↓</th>
-					<th>微信号↓</th>
-				</tr>
-				<tr>
-					<td><img src="images/gzh_qr.jpg" width="100px" height="100px"></td>
-					<td><img src="images/wxh_qr.png" width="100px" height="100px"></td>
-				</tr>
-			</table>
-		</div> -->
+		<div id="hightechvideo" class="modal fade" tabindex="-1" role="dialog">
+		    <div class="modal-dialog modal-lg">
+		        <div class="modal-content">
+		            <div class="modal-body">
+		            <!-- 	<iframe height="498" width="510" frameborder="0" allowfullscreen
+ src="http://player.youku.com/embed/XNTY4ODU0NzQ0"></iframe> -->
+				<!-- 		<video
+						 src="http://www.acfun.cn/v/ac4356183?shareUid=13263636"
+						 controls playsinline webkit-playsinline> -->
+						    <embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=c01486jfgwl&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+						<!-- </video> -->
+		            </div>
+		        </div>
+		    </div>
+		</div>
 
 		<!-- Scripts -->
 		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdn.bootcss.com/jquery.flipster/1.1.2/jquery.flipster.min.js"></script>
 
 		<script>
@@ -301,7 +298,14 @@
 				}
 
 				cycleSlogan();
-				$('.featurelist').flipster();
+				$('.featurelist').flipster({
+					// autoplay: 2000,
+					style: 'carousel',
+					spacing: -0.2,
+					buttons: true,
+					// loop: true,
+					scrollwheel: false
+				});
 				// $('#fullpage').fullpage({
 				// 	verticalCentered: false,
 				// 	// slidesNavPosition: 'bottom',]
