@@ -142,7 +142,7 @@ Plans
   text-align: center; }
   .plan-wrapper .plan {
     color: #f7f5f9;
-    background-color: #617be5;
+    background-color: #526add;
     border-radius: 10px;
     padding-top: 2rem;
     padding-bottom: 2rem; }
@@ -156,14 +156,16 @@ Plans
       padding-top: 2rem;
       padding-bottom: 2rem; }
     .plan-wrapper .plan .desc-items {
+      padding: 0px;
       list-style: none;
-      font-size: 2rem;
-      text-align: start; }
+      font-size: 2rem; }
 
 /*********************************************************************************
 history
 **********************************************************************************/
 .historyshow {
+  border-radius: 10px;
+  font-size: 2rem;
   background-color: #f7f5f9;
   margin: auto;
   max-width: 992px;
@@ -203,80 +205,3 @@ contact methods
   padding-left: 2px;
   border-right: .15em solid #b5e853;
   animation: blink-caret .75s step-end infinite; }
-
-/**************/
-/* down arrow */
-/**************/
-.arrow {
-  position: absolute;
-  bottom: 5vh;
-  width: 100%;
-  text-align: center; }
-  .arrow i {
-    border: solid #348C9B;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 15px; }
-  .arrow i.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    animation: blink 5s infinite, move 1s infinite;
-    -webkit-animation: blink 5s infinite, move 1s infinite;
-    -moz-animation: blink 5s infinite, move 1s infinite; }
-
-@keyframes blink {
-  0% {
-    border-color: #348C9B; }
-  25% {
-    border-color: #A6D6B0; }
-  50% {
-    border-color: #FAA866; }
-  75% {
-    border-color: #F15B4C; }
-  100% {
-    border-color: #348C9B; } }
-
-@-webkit-keyframes blink {
-  0% {
-    border-color: #348C9B; }
-  25% {
-    border-color: #A6D6B0; }
-  50% {
-    border-color: #FAA866; }
-  75% {
-    border-color: #F15B4C; }
-  100% {
-    border-color: #348C9B; } }
-
-@-moz-keyframes blink {
-  0% {
-    border-color: #348C9B; }
-  25% {
-    border-color: #A6D6B0; }
-  50% {
-    border-color: #FAA866; }
-  75% {
-    border-color: #F15B4C; }
-  100% {
-    border-color: #348C9B; } }
-
-@keyframes move {
-  0% {
-    transform: translate(0px, 0px) rotate(45deg);
-    animation-timing-function: ease-in; }
-  100% {
-    transform: translate(0px, 25px) rotate(45deg); } }
-
-@-webkit-keyframes move {
-  0% {
-    transform: translate(0px, 0px) rotate(45deg);
-    animation-timing-function: ease-in; }
-  100% {
-    transform: translate(0px, 25px) rotate(45deg); } }
-
-@-moz-keyframes move {
-  0% {
-    transform: translate(0px, 0px) rotate(45deg);
-    animation-timing-function: ease-in; }
-  100% {
-    transform: translate(0px, 25px) rotate(45deg); } }

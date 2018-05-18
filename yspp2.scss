@@ -70,14 +70,7 @@ html {
 	
 }
 .section {
-	// min-height: 95%;
-	// height: 90%;
-	// @media (min-width: 768px) {
-	// 	padding: 0;
-	// }
-	// @media (min-width: 992px) {
-	// 	padding: 0 20vh;
-	// }
+
 	padding-bottom: 5vh;
 
 	&:nth-child(odd) {
@@ -131,29 +124,6 @@ Icons
 .icons_super { background-position: 0 80%; background-size: 100%; }
 .icons_vip { background-position: 0 100%; background-size: 100%; }
 
-
-// .modal {
-//   text-align: center;
-//   padding: 0!important;
-// }
-
-// .modal:before {
-//   content: '';
-//   display: inline-block;
-//   height: 100%;
-//   vertical-align: middle;
-//   margin-right: -4px;
-// }
-
-// .modal-dialog {
-//   display: inline-block;
-//   text-align: left;
-//   vertical-align: middle;
-// }
-// .youkuvideo {
-// 	min-height: 500px;
-// }
-
 /*********************************************************************************
 Features
 **********************************************************************************/
@@ -188,7 +158,7 @@ Plans
 	text-align: center;
 	.plan {
 		color: $color-white;
-		background-color: $color-fg-blue;
+		background-color: $color-bg-blue;
 		border-radius: 10px;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
@@ -205,18 +175,18 @@ Plans
 			padding-bottom: 2rem;
 		}
 		.desc-items {
+			padding: 0px;
 			list-style: none;
 			font-size: 2rem;
-			text-align: start;
 		}
 	}
-
 }
-
 /*********************************************************************************
 history
 **********************************************************************************/
 .historyshow {
+	border-radius: 10px;
+	font-size: 2rem;
 	background-color: $color-white;
 	margin: auto;
 	max-width: 992px;
@@ -225,10 +195,6 @@ history
 		text-align: center;
 	}
 }
-
-
-
-
 /*********************************************************************************
 contact methods
 **********************************************************************************/
@@ -277,52 +243,4 @@ contact methods
 		border-right: .15em solid #b5e853 ;
 		animation: blink-caret .75s step-end infinite;	
 	}	
-}
-
-/**************/
-/* down arrow */
-/**************/
-.arrow {
-	position: absolute;
-	bottom: 5vh;
-	width: 100%;
-	text-align: center;
-
-	i {
-	    border: solid #348C9B;
-	    border-width: 0 4px 4px 0;
-	    display: inline-block;
-	    padding: 15px;
-	}
-	i.down {
-	    transform: rotate(45deg);
-	    -webkit-transform: rotate(45deg);
-	    animation: blink 5s infinite, move 1s infinite;
-	    -webkit-animation: blink 5s infinite, move 1s infinite;
-	    -moz-animation:    blink 5s infinite, move 1s infinite;
-	}
-}
-
-
-
-@keyframes blink {
-    0% { border-color: #348C9B; } 25% { border-color: #A6D6B0;} 50% { border-color: #FAA866; } 75% { border-color: #F15B4C; } 100% { border-color: #348C9B; }
-}
-@-webkit-keyframes blink {
-    0% { border-color: #348C9B; } 25% { border-color: #A6D6B0;} 50% { border-color: #FAA866; } 75% { border-color: #F15B4C; } 100% { border-color: #348C9B; }
-}
-@-moz-keyframes blink {
-    0% { border-color: #348C9B; } 25% { border-color: #A6D6B0;} 50% { border-color: #FAA866; } 75% { border-color: #F15B4C; } 100% { border-color: #348C9B; }
-}
-@keyframes move {
-    0% { transform: translate(0px, 0px) rotate(45deg); animation-timing-function: ease-in; }
-    100% { transform: translate(0px, 25px) rotate(45deg); }
-}
-@-webkit-keyframes move {
-    0% { transform: translate(0px, 0px) rotate(45deg); animation-timing-function: ease-in; }
-    100% { transform: translate(0px, 25px) rotate(45deg); }
-}
-@-moz-keyframes move {
-    0% { transform: translate(0px, 0px) rotate(45deg); animation-timing-function: ease-in; }
-    100% { transform: translate(0px, 25px) rotate(45deg); }
 }
