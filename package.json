@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "gh-pages-deploy"
+    "publish": "gh-pages-deploy",
+    "scss": "./node_modules/.bin/node-sass --watch ./yspp.scss -o ./"
   },
   "repository": {
     "type": "git",

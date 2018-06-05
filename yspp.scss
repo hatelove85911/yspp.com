@@ -10,9 +10,6 @@ $color-golden: #FFD700;
 %abutton {
 	background-color: $color-green;
 	color: $color-white;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	border-radius: 10px;
 	text-decoration: none;
 }
 
@@ -48,7 +45,7 @@ html {
 
 #fullpage {
 	height: 100%;
-
+	padding: 0px;
 }
 
 .slogan {
@@ -57,20 +54,32 @@ html {
 	padding-top: 15vh;
 	margin: 0;
 
-	.contact_us {
+	.contact_us_btn {
 		@extend %abutton;
-		display: block;
-		margin: 2vh auto;
-		width: 10rem;
+		background-color: $color-green;
+		margin-top: 1rem;
 	}
 	.cycleSlogan,.typed-cursor {
 		color: $color5;
 		line-height: 6vh;
 	}
-	
+}
+
+.cover {
+	background-position: bottom center;
+	background-size: contain;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	// padding-top: 30.2%;
+	@media only screen and (min-width : 320px) {
+		background-image: url(images/cover-4phone.jpg);
+    }
+    @media only screen and (min-width : 768px) {
+    	background-image: url(images/cover.jpg);
+    }
 }
 .section {
-
 	padding-bottom: 5vh;
 
 	&:nth-child(odd) {
@@ -144,13 +153,23 @@ Features
 		font-size: 4rem;
 	}
 	.feature-desc {
+		padding: 0px 2rem;
 		color: $color-white;
-		font-size: 2rem;
+		font-size: 1.5rem;
+	}
+	.feature-img-video {
+		padding: 2.5rem 0px;
+		.feature-img-video-content {
+			width: 20rem;
+			height: 20rem;
+		}
+	}
+	.feature-advantage {
+		font-size: 1rem;
+		color: $color-golden;
 	}
 }
-.flipster__button {
-	margin: 0px;
-}
+
 /*********************************************************************************
 Plans
 **********************************************************************************/
@@ -199,36 +218,71 @@ history
 contact methods
 **********************************************************************************/
 #contact_us {
-	color: $color-white;
-	table {
+	color: $color-fg-blue;
+	// .well {
+	// 	background-color: $color-bg-blue;
+	// 	border-radius: 10px;
+	// }
+	table.quick_link {
 		margin: 0 auto;
 		text-align: center;
+		p {
+			margin: 0px;
+			padding-top: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		td {
+			padding: 5px;
+		}
 	}
 
-	.phone a {
-		@extend %abutton;
-		display: block;
-		width: 12rem;
-		height: 4rem;
-		line-height: 4rem;
-	}
-	.taobao a {
-		@extend %abutton;
-		display: block;
-		width: 12rem;
-		height: 4rem;
-		line-height: 4rem;
-		background-color: #FF5000;
-	}
-	.gzh img {
-		width: 12rem;
-		height: 12rem;
+	table.contact_info {
+		padding: 1rem !important;
+		margin: 0 auto;
+		// margin-top: 3rem;
+		td.info_lable {
+		}
+
+		td.info_value {
+			color: $color-white !important;
+			padding-left: 5px;
+		}
 	}
 
-	.wxh img {
-		widtH: 12rem;
-		height: 12rem;
+	.phone {
+		a {
+			@extend %abutton;
+			font-size: 1.5rem;
+			background-color: $color-green;
+		}
 	}
+	.taobao {
+		a {
+			@extend %abutton;
+			background-color: #FF5000;
+		}
+	}
+	.gzh {
+		img {
+			width: 12rem;
+			height: 12rem;
+		}
+	}
+
+	.wxh {
+		img {
+			widtH: 12rem;
+			height: 12rem;
+		}
+	}
+}
+
+
+footer {
+	color: $color-fg-blue;
+	text-align: center;
+	background-color: $color-white;
 }
 
 /* typewriter effect
@@ -243,4 +297,8 @@ contact methods
 		border-right: .15em solid #b5e853 ;
 		animation: blink-caret .75s step-end infinite;	
 	}	
+}
+
+.flipster__button {
+	margin: 0px;
 }

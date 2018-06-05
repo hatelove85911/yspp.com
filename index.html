@@ -13,7 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://cdn.bootcss.com/jquery.flipster/1.1.2/jquery.flipster.min.css" rel="stylesheet">
-		<link href="yspp2.css" rel="stylesheet"/>
+		<link href="yspp.css" rel="stylesheet"/>
 	</head>
 	<body>
 		<div id="fullpage">
@@ -23,8 +23,10 @@
 					<br>
 					拍牌我们是专业的
 					<br>
-					<a class="btn btn-default btn-lg" href="#contact_us" role="button">联系我们</a>			
+					<a class="btn btn-default btn-lg contact_us_btn" href="#contact_us" role="button">联系我们</a>
 				</h1>
+				<div class="cover">
+				</div>				
 			</div>
 			<div class="section features">
 				<h2 class="section-header">特点</h2>
@@ -34,26 +36,45 @@
 							<div class="feature">
 								<div class="icons_showbids"></div>
 								<p class="feature-title">真实源于晒单</p>
-								<p class="feature-desc">blahblhahalaha</p>
+								<p class="feature-desc">拍牌前一天公布参拍标书号,拍后公布中标标书和实际命中率, 无法作假, 绝对真实, 关注微信公众号了解实时动态</p>
+								<div class="feature-img-video">
+									<img src="images/gzh_qr.jpg" class="feature-img-video-content">
+								</div>
 							</div>
 						</li>
 						<li>
 							<div class="feature">
 								<div class="icons_magic"></div>
 								<p class="feature-title">黑科技</p>
-								<p class="feature-desc">blahblhahalaha</p>
-								<div style="background-color: white">
-<script src="https://fast.wistia.com/embed/medias/84nrr21hsj.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_84nrr21hsj popover=true popoverAnimateThumbnail=true" style="display:inline-block;height:83px;position:relative;width:150px">&nbsp;</span>
-									
-								</div>
+								<p class="feature-desc">点视频, 看看我们强大的黑科技!</p>
+								<div class="feature-img-video">
+									<script src="https://fast.wistia.com/embed/medias/qk01xsh2uf.jsonp" async></script>
+									<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+									<span id="black-magic-video" class="wistia_embed wistia_async_qk01xsh2uf popover=true popoverAnimateThumbnail=true feature-img-video-content" style="display:inline-block;position:relative;">&nbsp;</span>
 
+<!-- 									<script src="https://fast.wistia.com/embed/medias/qk01xsh2uf.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+									<div id="black-magic-video" class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+										<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+											<div class="wistia_embed wistia_async_qk01xsh2uf videoFoam=true" style="height:100%;position:relative;width:100%">
+												<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+													<img src="https://fast.wistia.com/embed/medias/qk01xsh2uf/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" />
+												</div>
+											</div>
+										</div>
+									</div> -->
+
+								</div>
 							</div>
 						</li>
 						<li>
 							<div class="feature">
 								<div class="icons_software"></div>
 								<p class="feature-title">自研软件</p>
-								<p class="feature-desc">blahblhahalaha</p>
+								<p class="feature-desc">出自顶级架构师之手, 拍牌量身定制。 优势: 国拍时间价格无延迟探测, 异常低价(幺蛾子）月检测, 出价窗口动态预测</p>
+
+								<div class="feature-img-video">
+									<img src="images/software_2.png" class="feature-img-video-content">
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -71,7 +92,7 @@
 									<p class="category">高性价比</p>
 									<p class="price">12000元</p>
 									<ul class="desc-items">
-										<li>3次不中赔200元</li>
+										<li>不赔付</li>
 										<li>漏拍赔500元</li>
 										<li>拍中再付款</li>
 									</ul>
@@ -85,7 +106,7 @@
 									<p class="category">VIP</p>
 									<p class="price">15000元</p>
 									<ul class="desc-items">
-										<li>3次不中赔500元</li>
+										<li>5次不中赔1000元</li>
 										<li>漏拍赔500元</li>
 										<li>拍中再付款</li>
 									</ul>
@@ -114,6 +135,7 @@
 				<table class="table table-hover historyshow">
 					<thead><tr><th>月份</th><th>中标/总数</th><th>中标率</th><th>报告</th></tr></thead>
 					<tbody>
+					  <tr><td>201805</td><td>1/130</td><td>0.77%</td><td><a href="https://mp.weixin.qq.com/s?__biz=MzIwMzYwMTI1Ng==&mid=2247483832&idx=1&sn=2b92b66c23fe5795d3aa9ba9a0c7f812&chksm=96cda5bfa1ba2ca90d95fec6e21b0e6a1ff7aaf84a030121d4f74c90625c17f1914b92a13aeb&mpshare=1&scene=1&srcid=0605u1Vdcd7sDeYduvdlW4t5&pass_ticket=kHJeV1XYsEsxMqvu4ne0lOZ2XWXo1doG2ImtgFYhOSuQc0L45V6RfUMIFuRXO09E#rd">详细报告</a></td></tr>
 					  <tr><td>201804</td><td>53/111</td><td>47.7%</td><td><a href="https://mp.weixin.qq.com/s?__biz=MzIwMzYwMTI1Ng==&mid=2247483825&idx=1&sn=0de077b3ea349fd0bfa980645a800e7f&chksm=96cda5b6a1ba2ca04ae467f20138a770a8933ba76eadb133be722155c8901d77c454d5baa998&scene=0&pass_ticket=Pa3Kce75ucG%2FLCvw3sha9NRnYHPIIjxeoJz%2BMagIK%2BvKT1MPiJpJ15T9EXrJ5mvF#rd">详细报告</a></td></tr>
 					  <tr><td>201803</td><td>16/107</td><td>14.95%</td><td><a href="https://mp.weixin.qq.com/s?__biz=MzIwMzYwMTI1Ng==&mid=2247483804&idx=1&sn=f87d21e7b14f50aa27e080e8cc086c89&chksm=96cda59ba1ba2c8df52a0e98401f318f6aa9cc86e86d7814c12325bbc3dcc9a41e2be35aa2fc&scene=0&pass_ticket=Pa3Kce75ucG%2FLCvw3sha9NRnYHPIIjxeoJz%2BMagIK%2BvKT1MPiJpJ15T9EXrJ5mvF#rd">详细报告</a></td></tr>
 					  <tr><td>201802</td><td>7/101</td><td>6.93%</td><td><a href="https://mp.weixin.qq.com/s?__biz=MzIwMzYwMTI1Ng==&mid=2247483794&idx=1&sn=4aeca36d2ad3d1c27d0d6c3d97506790&chksm=96cda595a1ba2c83f670f180ca8297440660ea5c889ba291f3b9f05587a695f334c6aa109cf4&scene=0&pass_ticket=Pa3Kce75ucG%2FLCvw3sha9NRnYHPIIjxeoJz%2BMagIK%2BvKT1MPiJpJ15T9EXrJ5mvF#rd">详细报告</a></td></tr>
@@ -132,27 +154,37 @@
 			</div>
 			<div class="section contact_us" id="contact_us">
 				<h2 class="section-header">联系方式</h2>
-				<table>
-					<tr>
-						<td>
-							<a class="button" href="tel:17621343858">&#128241;17621343858</a>
-						</td>
-						<td class="taobao">
-							<a class="button" href="https://item.taobao.com/item.htm?spm=a230r.1.14.16.79796f4194uQ3o&id=540326893336&ns=1&abbucket=13#detail">淘宝店</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="gzh">
-							<p>微信公众号</p>
-							<img src="images/gzh_qr.jpg">
-						</td>
-						<td class="wxh">
-							<p>微信联系人</p>
-							<img src="images/wxh_qr.png">	
-						</td>
-					</tr>
-				</table>
-			</div>	
+
+				<div class="container">
+					<div class="row">
+							<!-- <div class="well"> -->
+								<table class="quick_link">
+									<tr>
+										<td class="phone">
+											<p>手机</p>
+											<a class="btn btn-default btn-lg" href="tel:17621343858">17621343858</a>
+										</td>
+										<td class="taobao">
+											<p>淘宝店</p>
+											<a class="btn btn-default btn-lg" href="https://item.taobao.com/item.htm?spm=a230r.1.14.16.79796f4194uQ3o&id=540326893336&ns=1&abbucket=13#detail">淘宝店</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="gzh">
+											<p>微信公众号</p>
+											<img src="images/gzh_qr.jpg">
+										</td>
+										<td class="wxh">
+											<p>微信联系人</p>
+											<img src="images/wxh_qr.png">	
+										</td>
+									</tr>
+								</table>
+							<!-- </div> -->
+					</div>
+				</div>
+			</div>
+			<footer><a href="company.html" style="padding-right:2rem;">公司简介</a>Copyright © 2017 羽山沪牌代拍 沪ICP备17054583号-1</footer>
 		</div>
 
 		<!-- Scripts -->
@@ -160,6 +192,7 @@
 		<script src="https://cdn.bootcss.com/jquery.flipster/1.1.2/jquery.flipster.min.js"></script>
 
 		<script>
+			window.jQuery = $;
 			$(document).ready(function() {
 				function typewritereffect(el, wholetext) {
 					var real = $(el).get(0).childNodes[0]
@@ -244,9 +277,21 @@
 					style: 'carousel',
 					spacing: -0.2,
 					buttons: true,
-					// loop: true,
+					touch: true,
+					loop: true,
 					scrollwheel: false
 				});
+
+				// function autoplayCoverVideo () {
+				// 	var $playbutton = $('#black-magic-video button')
+				// 	if ($playbutton.length > 0) {
+				// 		$playbutton.click()
+				// 	} else {
+				// 		setTimeout(autoplayCoverVideo, 100)
+				// 	}
+				// }
+				// setTimeout(autoplayCoverVideo, 1000)
+				
 			});
 		</script>
 	
