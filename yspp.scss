@@ -66,13 +66,12 @@ html {
 }
 
 .cover {
-	background-position: bottom center;
+	width: 100%;
+	height: calc(100% - 30vh);
+	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
-	// padding-top: 30.2%;
-	@media only screen and (min-width : 320px) {
+	@media only screen and (min-width : 320px) and (orientation: portrait) {
 		background-image: url(images/cover-4phone.jpg);
     }
     @media only screen and (min-width : 768px) {
@@ -81,7 +80,7 @@ html {
 }
 .section {
 	padding-bottom: 5vh;
-
+	position: relative;
 	&:nth-child(odd) {
 		background-color: $color-white;
 		.section-header {
@@ -95,6 +94,7 @@ html {
 		}
 	}
 	&.home {
+		height: 95%;
 		min-height: 95%;
 	}
 	&.features {
