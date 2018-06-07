@@ -74,6 +74,8 @@ html {
     min-height: 95%; }
   .section.features {
     min-height: 70%; }
+    .section.features .featurelist {
+      overflow: hidden; }
   .section.plans {
     min-height: 70%; }
   .section.history {

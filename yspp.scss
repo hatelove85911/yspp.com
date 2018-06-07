@@ -99,6 +99,10 @@ html {
 	}
 	&.features {
 		min-height: 70%;
+
+		.featurelist  {
+			overflow: hidden;
+		}
 	}
 	&.plans {
 		min-height: 70%;
