@@ -6,6 +6,8 @@ $color-green: #69d3c2;
 $color-white: #f7f5f9;
 $color-fg-blue: #617be5;
 $color-golden: #FFD700;
+$color-bg-red: #FF5000;
+$color-bg-grey: grey;
 
 %abutton {
 	background-color: $color-green;
@@ -205,6 +207,43 @@ Plans
 	}
 }
 /*********************************************************************************
+shandai
+**********************************************************************************/
+.shaidan {
+  background-color: $color-white;
+  max-width: 992px;
+  text-align: center;
+  margin: auto;
+  .zhongbiao {
+    padding-left: 4rem;
+    background-color: $color-bg-red;
+  }
+  .chedan {
+    margin-left: 2rem;
+    padding-left: 4rem;
+    background-color: $color-bg-grey;
+  }
+  .shaidan-shuoming {
+    color: $color-white;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+.zhongbiao-jietu-shuoming {
+  color: $color-white;
+  text-align: center;
+}
+.current-month-shujujianbao {
+  h3 {
+    color: $color-white;
+    text-align: center;
+  }
+  table {
+    background-color: $color-white;
+    max-width: 700px;
+  }
+}
+/*********************************************************************************
 history
 **********************************************************************************/
 .historyshow {
@@ -222,7 +261,7 @@ history
 contact methods
 **********************************************************************************/
 #contact_us {
-	color: $color-fg-blue;
+	color: $color-white;
 	// .well {
 	// 	background-color: $color-bg-blue;
 	// 	border-radius: 10px;
@@ -264,7 +303,7 @@ contact methods
 	.taobao {
 		a {
 			@extend %abutton;
-			background-color: #FF5000;
+			background-color: $color-bg-red;
 		}
 	}
 	.gzh {
