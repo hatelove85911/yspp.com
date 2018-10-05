@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.slogan .contact_us_btn, #contact_us .phone a, #contact_us .taobao a {
+#fullpage .section.home .contact_us_btn, #fullpage .section.contact_us .phone a, #fullpage .section.contact_us .taobao a {
   background-color: #69d3c2;
   color: #f7f5f9;
   text-decoration: none; }
@@ -10,86 +10,272 @@ html {
     height: 100%;
     font-family: Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", "KaiTi", "楷体", "SimHei", "黑体"; }
 
-.header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  background-color: #f7f5f9; }
-  @media (min-width: 768px) {
-    .header {
-      padding: 0; } }
-  @media (min-width: 992px) {
-    .header {
-      padding: 0 20vh; } }
-  .header .logo {
-    text-decoration: none; }
-    .header .logo img {
-      width: 5vh;
-      height: 5vh;
-      border-radius: 50%; }
-
 #fullpage {
+  overflow-x: hidden;
   height: 100%;
   padding: 0px; }
+  #fullpage .section {
+    padding-bottom: 5vh;
+    position: relative; }
+    #fullpage .section:nth-child(odd) {
+      color: #617be5;
+      background-color: #f7f5f9; }
+      #fullpage .section:nth-child(odd) .section-header {
+        color: #617be5; }
+    #fullpage .section:nth-child(even) {
+      color: #f7f5f9;
+      background-color: #526add; }
+      #fullpage .section:nth-child(even) .section-header {
+        color: #f7f5f9; }
+    #fullpage .section .section-header {
+      text-align: center;
+      padding-top: 6vh;
+      line-height: 8vh;
+      margin: 0;
+      font-size: 4rem; }
+    #fullpage .section.home {
+      height: 95%;
+      min-height: 95%; }
+      #fullpage .section.home .contact_us_btn {
+        background-color: #69d3c2;
+        margin-top: 1rem; }
+      #fullpage .section.home .slogan {
+        color: #4e5983;
+        text-align: center;
+        padding-top: 15vh;
+        margin: 0; }
+        #fullpage .section.home .slogan .cycleSlogan, #fullpage .section.home .slogan .typed-cursor {
+          color: #00b8cd;
+          line-height: 6vh; }
+      #fullpage .section.home .cover {
+        width: 100%;
+        height: calc(100% - 30vh);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        @media only screen and (min-width: 320px) and (orientation: portrait) {
+          #fullpage .section.home .cover {
+            background-image: url(images/cover-4phone.jpg); } }
+        @media only screen and (min-width: 768px) {
+          #fullpage .section.home .cover {
+            background-image: url(images/cover.jpg); } }
+    #fullpage .section.features .features-container .swiper-container {
+      overflow: visible;
+      width: 100%; }
+    #fullpage .section.features .features-container .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 25%; }
+    #fullpage .section.features .features-container .feature {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      text-align: center;
+      color: #f7f5f9;
+      background-color: #69d3c2;
+      border-radius: 10px; }
+      #fullpage .section.features .features-container .feature .feature-title {
+        font-size: 4rem; }
+      #fullpage .section.features .features-container .feature .feature-desc {
+        padding: 0px 2rem;
+        font-size: 1.5rem; }
+      #fullpage .section.features .features-container .feature .feature-img-video {
+        padding: 2.5rem 0px; }
+        #fullpage .section.features .features-container .feature .feature-img-video .feature-img-video-content {
+          width: 20rem;
+          height: 20rem; }
+      #fullpage .section.features .features-container .feature .advantages {
+        list-style-type: disc;
+        padding-left: 30%;
+        text-align: left; }
+    #fullpage .section.plans {
+      min-height: 70%; }
+      #fullpage .section.plans .plan-wrapper {
+        text-align: center; }
+        #fullpage .section.plans .plan-wrapper .plan {
+          color: #f7f5f9;
+          background-color: #526add;
+          border-radius: 10px;
+          padding-top: 2rem;
+          padding-bottom: 2rem; }
+          #fullpage .section.plans .plan-wrapper .plan.golden .category {
+            color: #FFD700; }
+          #fullpage .section.plans .plan-wrapper .plan .category {
+            font-size: 3rem; }
+          #fullpage .section.plans .plan-wrapper .plan .price {
+            color: #FFD700;
+            font-size: 4rem;
+            padding-top: 2rem;
+            margin-bottom: 0; }
+            #fullpage .section.plans .plan-wrapper .plan .price .currency {
+              color: #f7f5f9;
+              font-size: 2rem; }
+          #fullpage .section.plans .plan-wrapper .plan .claim {
+            font-size: 2rem; }
+            #fullpage .section.plans .plan-wrapper .plan .claim .claimamount {
+              font-size: 4rem;
+              color: #FFD700; }
+          #fullpage .section.plans .plan-wrapper .plan .desc-items {
+            padding: 0px;
+            list-style: none;
+            font-size: 2rem; }
+    #fullpage .section.curr-month-data {
+      background-color: #69d3c2; }
+      #fullpage .section.curr-month-data .shaidan {
+        text-align: center;
+        color: black; }
+        #fullpage .section.curr-month-data .shaidan td {
+          background-color: #f7f5f9; }
+        #fullpage .section.curr-month-data .shaidan .preBid {
+          color: #FFD700;
+          font-size: 3rem; }
+    #fullpage .section.prev-month-data {
+      color: #f7f5f9;
+      background-color: #526add; }
+      #fullpage .section.prev-month-data .section-header {
+        color: #f7f5f9; }
+      #fullpage .section.prev-month-data .shaidan .zhongbiao {
+        background-color: #FF5000; }
+      #fullpage .section.prev-month-data .shaidan .chedan {
+        background-color: grey; }
+      #fullpage .section.prev-month-data .shaidan .shaidan-shuoming {
+        color: #f7f5f9;
+        font-size: 2rem; }
+        #fullpage .section.prev-month-data .shaidan .shaidan-shuoming .zhongbiao {
+          padding-left: 4rem;
+          background-color: #FF5000; }
+        #fullpage .section.prev-month-data .shaidan .shaidan-shuoming .zhongbiao-highlight {
+          margin-left: 2rem;
+          padding-left: 4rem;
+          background-color: #69d3c2; }
+        #fullpage .section.prev-month-data .shaidan .shaidan-shuoming .chedan {
+          margin-left: 2rem;
+          padding-left: 4rem;
+          background-color: grey; }
+      #fullpage .section.prev-month-data .shaidan .preBid {
+        color: #FFD700;
+        font-size: 3rem; }
+      #fullpage .section.prev-month-data .zhongbiao-jietu .zhongbiao-jietu-shuoming {
+        text-align: center; }
+        #fullpage .section.prev-month-data .zhongbiao-jietu .zhongbiao-jietu-shuoming .postBid {
+          color: #FFD700;
+          font-size: 3rem; }
+      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-container {
+        width: 100%;
+        padding-bottom: 40px; }
+      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 450px;
+        height: 310px; }
+      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        opacity: 1;
+        color: #f7f5f9;
+        background: #526add; }
+      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-pagination-bullet-active {
+        color: #526add;
+        background: #f7f5f9; }
+      #fullpage .section.prev-month-data .zhongbiao-highlight {
+        background-color: #69d3c2 !important; }
+    #fullpage .section.history {
+      background-color: #69d3c2; }
+      #fullpage .section.history .historyshow {
+        color: black;
+        border-radius: 10px;
+        font-size: 2rem;
+        background-color: #f7f5f9;
+        text-align: center; }
+        #fullpage .section.history .historyshow th {
+          text-align: center; }
+      #fullpage .section.history .history-comment {
+        text-align: center;
+        color: #f7f5f9;
+        font-size: 2rem; }
+    #fullpage .section.contact_us table.quick_link {
+      margin: 0 auto;
+      text-align: center; }
+      #fullpage .section.contact_us table.quick_link p {
+        margin: 0px;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem; }
+      #fullpage .section.contact_us table.quick_link td {
+        padding: 5px; }
+    #fullpage .section.contact_us table.contact_info {
+      padding: 1rem !important;
+      margin: 0 auto; }
+      #fullpage .section.contact_us table.contact_info td.info_value {
+        color: #f7f5f9 !important;
+        padding-left: 5px; }
+    #fullpage .section.contact_us .phone a {
+      font-size: 1.5rem;
+      background-color: #69d3c2; }
+    #fullpage .section.contact_us .taobao a {
+      background-color: #FF5000; }
+    #fullpage .section.contact_us .gzh img {
+      width: 12rem;
+      height: 12rem; }
+    #fullpage .section.contact_us .wxh img {
+      widtH: 12rem;
+      height: 12rem; }
+    #fullpage .section footer {
+      color: #617be5;
+      text-align: center;
+      background-color: #f7f5f9; }
 
-.slogan {
-  color: #4e5983;
-  text-align: center;
-  padding-top: 15vh;
-  margin: 0; }
-  .slogan .contact_us_btn {
-    background-color: #69d3c2;
-    margin-top: 1rem; }
-  .slogan .cycleSlogan, .slogan .typed-cursor {
-    color: #00b8cd;
-    line-height: 6vh; }
-
-.cover {
-  width: 100%;
-  height: calc(100% - 30vh);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-  @media only screen and (min-width: 320px) and (orientation: portrait) {
-    .cover {
-      background-image: url(images/cover-4phone.jpg); } }
-  @media only screen and (min-width: 768px) {
-    .cover {
-      background-image: url(images/cover.jpg); } }
-
-.section {
-  padding-bottom: 5vh;
-  position: relative; }
-  .section:nth-child(odd) {
-    background-color: #f7f5f9; }
-    .section:nth-child(odd) .section-header {
-      color: #617be5; }
-  .section:nth-child(even) {
-    background-color: #526add; }
-    .section:nth-child(even) .section-header {
-      color: #f7f5f9; }
-  .section.home {
-    height: 95%;
-    min-height: 95%; }
-  .section.features {
-    min-height: 70%; }
-    .section.features .featurelist {
+#fullpagemobile {
+  height: 100%;
+  padding: 0px; }
+  #fullpagemobile .section {
+    padding-bottom: 2vh;
+    position: relative; }
+    #fullpagemobile .section:nth-child(odd) {
+      background-color: #f7f5f9; }
+      #fullpagemobile .section:nth-child(odd) .section-header {
+        color: #617be5; }
+    #fullpagemobile .section:nth-child(even) {
+      background-color: #526add; }
+      #fullpagemobile .section:nth-child(even) .section-header {
+        color: #f7f5f9; }
+    #fullpagemobile .section.home .swiper-container {
+      width: 100%;
+      height: 350px; }
+    #fullpagemobile .section.home .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 450px;
+      height: 310px; }
+    #fullpagemobile .section.home .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: #000;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.2); }
+    #fullpagemobile .section.home .swiper-pagination-bullet-active {
+      color: #fff;
+      background: #007aff; }
+    #fullpagemobile .section.features .featurelist {
       overflow: hidden; }
-  .section.plans {
-    min-height: 70%; }
-  .section.history {
-    background-color: #69d3c2; }
-  .section .section-header {
-    text-align: center;
-    padding-top: 6vh;
-    line-height: 8vh;
-    margin: 0;
-    font-size: 4rem; }
+    #fullpagemobile .section.plans {
+      min-height: 70%; }
+    #fullpagemobile .section.history {
+      background-color: #69d3c2; }
+    #fullpagemobile .section .section-header {
+      text-align: center;
+      padding-top: 1vh;
+      line-height: 4vh;
+      margin: 0;
+      font-size: 4rem; }
 
 /*********************************************************************************
 Icons
-**********************************************************************************/
+ **********************************************************************************/
 /* Generated by http://responsive-css.spritegen.com Responsive CSS Sprite Generator */
 .icons_balance, .icons_magic, .icons_saving, .icons_showbids, .icons_software,
 .icons_super, .icons_vip {
@@ -127,171 +313,6 @@ Icons
 .icons_vip {
   background-position: 0 100%;
   background-size: 100%; }
-
-/*********************************************************************************
-Features
-**********************************************************************************/
-.feature {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
-  width: 60vw;
-  color: #f7f5f9;
-  min-width: 300px;
-  min-height: 500px;
-  background-color: #69d3c2;
-  border-radius: 10px; }
-  @media (min-width: 768px) {
-    .feature {
-      width: 30vw; } }
-  .feature .feature-title {
-    font-size: 4rem; }
-  .feature .feature-desc {
-    padding: 0px 2rem;
-    font-size: 1.5rem; }
-  .feature .feature-img-video {
-    padding: 2.5rem 0px; }
-    .feature .feature-img-video .feature-img-video-content {
-      width: 20rem;
-      height: 20rem; }
-  .feature .advantages {
-    list-style-type: disc;
-    padding-left: 30%;
-    text-align: left; }
-
-/*********************************************************************************
-Plans
-**********************************************************************************/
-.plan-wrapper {
-  text-align: center; }
-  .plan-wrapper .plan {
-    color: #f7f5f9;
-    background-color: #526add;
-    border-radius: 10px;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
-    .plan-wrapper .plan.golden .category {
-      color: #FFD700; }
-    .plan-wrapper .plan .category {
-      font-size: 3rem;
-      margin: 0; }
-    .plan-wrapper .plan .price {
-      color: #FFD700;
-      font-size: 4rem;
-      padding-top: 2rem;
-      margin-bottom: 0; }
-      .plan-wrapper .plan .price .currency {
-        color: #f7f5f9;
-        font-size: 2rem; }
-    .plan-wrapper .plan .claim {
-      font-size: 2rem; }
-      .plan-wrapper .plan .claim .claimamount {
-        font-size: 4rem;
-        color: #FFD700; }
-    .plan-wrapper .plan .desc-items {
-      padding: 0px;
-      list-style: none;
-      font-size: 2rem; }
-
-/*********************************************************************************
-shandai
-**********************************************************************************/
-.shaidan {
-  color: #f7f5f9;
-  max-width: 992px;
-  text-align: center;
-  margin: auto; }
-  .shaidan .zhongbiao {
-    background-color: #FF5000; }
-  .shaidan .chedan {
-    background-color: grey; }
-  .shaidan .shaidan-shuoming {
-    color: #f7f5f9;
-    text-align: center;
-    font-size: 2rem; }
-    .shaidan .shaidan-shuoming .zhongbiao {
-      padding-left: 4rem;
-      background-color: #FF5000; }
-    .shaidan .shaidan-shuoming .chedan {
-      margin-left: 2rem;
-      padding-left: 4rem;
-      background-color: grey; }
-  .shaidan .preBid {
-    color: #FFD700;
-    font-size: 3rem; }
-
-.zhongbiao-jietu-shuoming {
-  color: #f7f5f9;
-  text-align: center; }
-  .zhongbiao-jietu-shuoming .postBid {
-    color: #FFD700;
-    font-size: 3rem; }
-
-.current-month-shujujianbao h3 {
-  color: #f7f5f9;
-  text-align: center; }
-
-.current-month-shujujianbao table {
-  color: #f7f5f9;
-  max-width: 700px; }
-
-td.zhongbiao-highlight {
-  background-color: #69d3c2 !important; }
-
-/*********************************************************************************
-history
-**********************************************************************************/
-.historyshow {
-  border-radius: 10px;
-  font-size: 2rem;
-  background-color: #f7f5f9;
-  margin: auto;
-  max-width: 992px;
-  text-align: center; }
-  .historyshow th {
-    text-align: center; }
-
-.history-comment {
-  text-align: center;
-  color: #f7f5f9;
-  font-size: 2rem; }
-
-/*********************************************************************************
-contact methods
-**********************************************************************************/
-#contact_us {
-  color: #f7f5f9; }
-  #contact_us table.quick_link {
-    margin: 0 auto;
-    text-align: center; }
-    #contact_us table.quick_link p {
-      margin: 0px;
-      padding-top: 1rem;
-      padding-bottom: 0.5rem; }
-    #contact_us table.quick_link td {
-      padding: 5px; }
-  #contact_us table.contact_info {
-    padding: 1rem !important;
-    margin: 0 auto; }
-    #contact_us table.contact_info td.info_value {
-      color: #f7f5f9 !important;
-      padding-left: 5px; }
-  #contact_us .phone a {
-    font-size: 1.5rem;
-    background-color: #69d3c2; }
-  #contact_us .taobao a {
-    background-color: #FF5000; }
-  #contact_us .gzh img {
-    width: 12rem;
-    height: 12rem; }
-  #contact_us .wxh img {
-    widtH: 12rem;
-    height: 12rem; }
-
-footer {
-  color: #617be5;
-  text-align: center;
-  background-color: #f7f5f9; }
 
 /* typewriter effect
  */
