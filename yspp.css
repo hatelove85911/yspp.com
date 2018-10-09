@@ -15,7 +15,7 @@ html {
   height: 100%;
   padding: 0px; }
   #fullpage .section {
-    padding-bottom: 5vh;
+    padding-bottom: 5rem;
     position: relative; }
     #fullpage .section:nth-child(odd) {
       color: #617be5;
@@ -29,8 +29,8 @@ html {
         color: #f7f5f9; }
     #fullpage .section .section-header {
       text-align: center;
-      padding-top: 6vh;
-      line-height: 8vh;
+      padding-top: 6rem;
+      line-height: 8rem;
       margin: 0;
       font-size: 4rem; }
     #fullpage .section.home {
@@ -42,82 +42,71 @@ html {
       #fullpage .section.home .slogan {
         color: #4e5983;
         text-align: center;
-        padding-top: 15vh;
+        padding-top: 15rem;
         margin: 0; }
         #fullpage .section.home .slogan .cycleSlogan, #fullpage .section.home .slogan .typed-cursor {
           color: #00b8cd;
-          line-height: 6vh; }
+          line-height: 6rem; }
       #fullpage .section.home .cover {
         width: 100%;
-        height: calc(100% - 30vh);
+        height: calc(100% - 30rem);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat; }
-        @media only screen and (min-width: 320px) and (orientation: portrait) {
-          #fullpage .section.home .cover {
-            background-image: url(images/cover-4phone.jpg); } }
-        @media only screen and (min-width: 768px) {
-          #fullpage .section.home .cover {
-            background-image: url(images/cover.jpg); } }
-    #fullpage .section.features .features-container .swiper-container {
-      overflow: visible;
-      width: 100%; }
-    #fullpage .section.features .features-container .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 25%; }
-    #fullpage .section.features .features-container .feature {
+    #fullpage .section.features .feature {
+      height: 60rem;
       padding-top: 2rem;
       padding-bottom: 2rem;
       text-align: center;
       color: #f7f5f9;
       background-color: #69d3c2;
       border-radius: 10px; }
-      #fullpage .section.features .features-container .feature .feature-title {
+      #fullpage .section.features .feature .feature-title {
         font-size: 4rem; }
-      #fullpage .section.features .features-container .feature .feature-desc {
+      #fullpage .section.features .feature .feature-desc {
         padding: 0px 2rem;
         font-size: 1.5rem; }
-      #fullpage .section.features .features-container .feature .feature-img-video {
-        padding: 2.5rem 0px; }
-        #fullpage .section.features .features-container .feature .feature-img-video .feature-img-video-content {
+      #fullpage .section.features .feature .feature-img-video {
+        position: absolute;
+        bottom: 5rem;
+        left: 0;
+        right: 0; }
+        #fullpage .section.features .feature .feature-img-video .feature-img-video-content {
           width: 20rem;
           height: 20rem; }
-      #fullpage .section.features .features-container .feature .advantages {
+      #fullpage .section.features .feature .advantages {
         list-style-type: disc;
         padding-left: 30%;
         text-align: left; }
-    #fullpage .section.plans {
-      min-height: 70%; }
-      #fullpage .section.plans .plan-wrapper {
-        text-align: center; }
-        #fullpage .section.plans .plan-wrapper .plan {
-          color: #f7f5f9;
-          background-color: #526add;
-          border-radius: 10px;
+    #fullpage .section.plans .plan-wrapper {
+      text-align: center; }
+      #fullpage .section.plans .plan-wrapper .plan {
+        color: #f7f5f9;
+        background-color: #526add;
+        border-radius: 10px;
+        padding-top: 2rem;
+        padding-bottom: 2rem; }
+        #fullpage .section.plans .plan-wrapper .plan.golden .category {
+          color: #FFD700; }
+        #fullpage .section.plans .plan-wrapper .plan .category {
+          font-size: 3rem; }
+        #fullpage .section.plans .plan-wrapper .plan .price {
+          color: #FFD700;
+          font-size: 4rem;
           padding-top: 2rem;
-          padding-bottom: 2rem; }
-          #fullpage .section.plans .plan-wrapper .plan.golden .category {
-            color: #FFD700; }
-          #fullpage .section.plans .plan-wrapper .plan .category {
-            font-size: 3rem; }
-          #fullpage .section.plans .plan-wrapper .plan .price {
-            color: #FFD700;
+          margin-bottom: 0; }
+          #fullpage .section.plans .plan-wrapper .plan .price .currency {
+            color: #f7f5f9;
+            font-size: 2rem; }
+        #fullpage .section.plans .plan-wrapper .plan .claim {
+          font-size: 2rem; }
+          #fullpage .section.plans .plan-wrapper .plan .claim .claimamount {
             font-size: 4rem;
-            padding-top: 2rem;
-            margin-bottom: 0; }
-            #fullpage .section.plans .plan-wrapper .plan .price .currency {
-              color: #f7f5f9;
-              font-size: 2rem; }
-          #fullpage .section.plans .plan-wrapper .plan .claim {
-            font-size: 2rem; }
-            #fullpage .section.plans .plan-wrapper .plan .claim .claimamount {
-              font-size: 4rem;
-              color: #FFD700; }
-          #fullpage .section.plans .plan-wrapper .plan .desc-items {
-            padding: 0px;
-            list-style: none;
-            font-size: 2rem; }
+            color: #FFD700; }
+        #fullpage .section.plans .plan-wrapper .plan .desc-items {
+          padding: 0px;
+          list-style: none;
+          font-size: 2rem; }
     #fullpage .section.curr-month-data {
       background-color: #69d3c2; }
       #fullpage .section.curr-month-data .shaidan {
@@ -128,6 +117,11 @@ html {
         #fullpage .section.curr-month-data .shaidan .preBid {
           color: #FFD700;
           font-size: 3rem; }
+        #fullpage .section.curr-month-data .shaidan .gzh-shaidan-link {
+          vertical-align: top;
+          text-decoration: underline;
+          cursor: pointer;
+          font-size: 1.5rem; }
     #fullpage .section.prev-month-data {
       color: #f7f5f9;
       background-color: #526add; }
@@ -146,7 +140,7 @@ html {
         #fullpage .section.prev-month-data .shaidan .shaidan-shuoming .zhongbiao-highlight {
           margin-left: 2rem;
           padding-left: 4rem;
-          background-color: #69d3c2; }
+          box-shadow: inset 0px 0px 0px 5px yellow; }
         #fullpage .section.prev-month-data .shaidan .shaidan-shuoming .chedan {
           margin-left: 2rem;
           padding-left: 4rem;
@@ -161,26 +155,12 @@ html {
           font-size: 3rem; }
       #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-container {
         width: 100%;
-        padding-bottom: 40px; }
+        overflow: visible; }
       #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-slide {
         background-position: center;
         background-size: cover;
         width: 450px;
         height: 310px; }
-      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        line-height: 20px;
-        font-size: 12px;
-        opacity: 1;
-        color: #f7f5f9;
-        background: #526add; }
-      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-pagination-bullet-active {
-        color: #526add;
-        background: #f7f5f9; }
-      #fullpage .section.prev-month-data .zhongbiao-highlight {
-        background-color: #69d3c2 !important; }
     #fullpage .section.history {
       background-color: #69d3c2; }
       #fullpage .section.history .historyshow {
@@ -225,53 +205,6 @@ html {
       color: #617be5;
       text-align: center;
       background-color: #f7f5f9; }
-
-#fullpagemobile {
-  height: 100%;
-  padding: 0px; }
-  #fullpagemobile .section {
-    padding-bottom: 2vh;
-    position: relative; }
-    #fullpagemobile .section:nth-child(odd) {
-      background-color: #f7f5f9; }
-      #fullpagemobile .section:nth-child(odd) .section-header {
-        color: #617be5; }
-    #fullpagemobile .section:nth-child(even) {
-      background-color: #526add; }
-      #fullpagemobile .section:nth-child(even) .section-header {
-        color: #f7f5f9; }
-    #fullpagemobile .section.home .swiper-container {
-      width: 100%;
-      height: 350px; }
-    #fullpagemobile .section.home .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 450px;
-      height: 310px; }
-    #fullpagemobile .section.home .swiper-pagination-bullet {
-      width: 20px;
-      height: 20px;
-      text-align: center;
-      line-height: 20px;
-      font-size: 12px;
-      color: #000;
-      opacity: 1;
-      background: rgba(0, 0, 0, 0.2); }
-    #fullpagemobile .section.home .swiper-pagination-bullet-active {
-      color: #fff;
-      background: #007aff; }
-    #fullpagemobile .section.features .featurelist {
-      overflow: hidden; }
-    #fullpagemobile .section.plans {
-      min-height: 70%; }
-    #fullpagemobile .section.history {
-      background-color: #69d3c2; }
-    #fullpagemobile .section .section-header {
-      text-align: center;
-      padding-top: 1vh;
-      line-height: 4vh;
-      margin: 0;
-      font-size: 4rem; }
 
 /*********************************************************************************
 Icons
