@@ -1,11 +1,10 @@
 @charset "UTF-8";
-#fullpage .section.home .contact_us_btn, #fullpage .section.contact_us .phone a, #fullpage .section.contact_us .taobao a {
-  background-color: #69d3c2;
-  color: #f7f5f9;
-  text-decoration: none; }
-
 html {
-  height: 100%; }
+  height: 100%;
+  font-size: 8px; }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 10px; } }
   html body {
     height: 100%;
     font-family: Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑", "KaiTi", "楷体", "SimHei", "黑体"; }
@@ -14,45 +13,66 @@ html {
   overflow-x: hidden;
   height: 100%;
   padding: 0px; }
-  #fullpage .section {
+  #fullpage .section.home {
+    color: #617be5;
+    background-color: #f7f5f9;
+    position: relative;
+    padding-top: 5rem;
     padding-bottom: 5rem;
-    position: relative; }
-    #fullpage .section:nth-child(odd) {
-      color: #617be5;
-      background-color: #f7f5f9; }
-      #fullpage .section:nth-child(odd) .section-header {
-        color: #617be5; }
-    #fullpage .section:nth-child(even) {
-      color: #f7f5f9;
-      background-color: #526add; }
-      #fullpage .section:nth-child(even) .section-header {
-        color: #f7f5f9; }
-    #fullpage .section .section-header {
+    height: 95%;
+    min-height: 95%; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.home {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+    #fullpage .section.home .section-header {
       text-align: center;
-      padding-top: 6rem;
       line-height: 8rem;
       margin: 0;
       font-size: 4rem; }
-    #fullpage .section.home {
-      height: 95%;
-      min-height: 95%; }
-      #fullpage .section.home .contact_us_btn {
-        background-color: #69d3c2;
-        margin-top: 1rem; }
-      #fullpage .section.home .slogan {
-        color: #4e5983;
-        text-align: center;
-        padding-top: 15rem;
-        margin: 0; }
-        #fullpage .section.home .slogan .cycleSlogan, #fullpage .section.home .slogan .typed-cursor {
-          color: #00b8cd;
-          line-height: 6rem; }
-      #fullpage .section.home .cover {
-        width: 100%;
-        height: calc(100% - 30rem);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.home .section-header {
+          padding-top: 0;
+          font-size: 3rem; } }
+    #fullpage .section.home .contact_us_btn {
+      background-color: #69d3c2;
+      color: #f7f5f9;
+      text-decoration: none;
+      background-color: #69d3c2;
+      margin-top: 1rem; }
+    #fullpage .section.home .slogan {
+      color: #4e5983;
+      text-align: center;
+      padding-top: 15rem;
+      margin: 0; }
+      #fullpage .section.home .slogan .cycleSlogan, #fullpage .section.home .slogan .typed-cursor {
+        color: #00b8cd;
+        line-height: 6rem; }
+    #fullpage .section.home .cover {
+      width: 100%;
+      height: calc(100% - 30rem);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  #fullpage .section.features {
+    color: #f7f5f9;
+    background-color: #526add;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.features {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+    #fullpage .section.features .section-header {
+      text-align: center;
+      line-height: 8rem;
+      margin: 0;
+      font-size: 4rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.features .section-header {
+          padding-top: 0;
+          font-size: 3rem; } }
     #fullpage .section.features .feature {
       height: 60rem;
       padding-top: 2rem;
@@ -78,6 +98,59 @@ html {
         list-style-type: disc;
         padding-left: 30%;
         text-align: left; }
+  #fullpage .section.plans-mobile {
+    color: #617be5;
+    background-color: #f7f5f9;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.plans-mobile {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+    #fullpage .section.plans-mobile .section-header {
+      text-align: center;
+      line-height: 8rem;
+      margin: 0;
+      font-size: 4rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.plans-mobile .section-header {
+          padding-top: 0;
+          font-size: 3rem; } }
+    #fullpage .section.plans-mobile .plan-wrapper {
+      height: 8rem;
+      background-color: #526add;
+      color: #f7f5f9;
+      border-radius: 10px;
+      display: table;
+      margin-bottom: 2px; }
+      #fullpage .section.plans-mobile .plan-wrapper .plan .claimamount {
+        color: #FFD700;
+        font-size: 4rem; }
+      #fullpage .section.plans-mobile .plan-wrapper .plan .claimdesc {
+        vertical-align: middle; }
+      #fullpage .section.plans-mobile .plan-wrapper .plan .price {
+        color: #FFD700;
+        font-size: 4rem; }
+  #fullpage .section.plans {
+    color: #617be5;
+    background-color: #f7f5f9;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.plans {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+    #fullpage .section.plans .section-header {
+      text-align: center;
+      line-height: 8rem;
+      margin: 0;
+      font-size: 4rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.plans .section-header {
+          padding-top: 0;
+          font-size: 3rem; } }
     #fullpage .section.plans .plan-wrapper {
       text-align: center; }
       #fullpage .section.plans .plan-wrapper .plan {
@@ -107,74 +180,179 @@ html {
           padding: 0px;
           list-style: none;
           font-size: 2rem; }
-    #fullpage .section.curr-month-data {
-      background-color: #69d3c2; }
-      #fullpage .section.curr-month-data .shaidan {
-        text-align: center;
-        color: black; }
-        #fullpage .section.curr-month-data .shaidan td {
-          background-color: #f7f5f9; }
-        #fullpage .section.curr-month-data .shaidan .preBid {
-          color: #FFD700;
-          font-size: 3rem; }
-        #fullpage .section.curr-month-data .shaidan .gzh-shaidan-link {
-          vertical-align: top;
-          text-decoration: underline;
-          cursor: pointer;
-          font-size: 1.5rem; }
-    #fullpage .section.prev-month-data {
+  #fullpage .section.curr-month-data {
+    color: #f7f5f9;
+    background-color: #69d3c2;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.curr-month-data {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+    #fullpage .section.curr-month-data .section-header {
+      text-align: center;
+      line-height: 8rem;
+      margin: 0;
+      font-size: 4rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.curr-month-data .section-header {
+          padding-top: 0;
+          font-size: 3rem; } }
+    #fullpage .section.curr-month-data .gzh-shaidan-link {
+      font-size: 2rem; }
+    #fullpage .section.curr-month-data .shaidan .preBid {
+      color: #FFD700;
+      font-size: 3rem; }
+    #fullpage .section.curr-month-data .shaidan .bidno {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      color: black;
+      background-color: #f7f5f9;
+      display: inline-block;
+      box-shadow: 1px 0 0 0 black, 0 1px 0 0 black, 1px 1px 0 0 black, 1px 0 0 0 black inset, 0 1px 0 0 black inset;
+      width: 10%; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.curr-month-data .shaidan .bidno {
+          width: 20%;
+          padding-top: 0px;
+          padding-bottom: 0px; } }
+    #fullpage .section.curr-month-data .advance-notes {
+      margin: 0;
+      font-size: 3rem; }
+  #fullpage .section.prev-month-data {
+    color: #f7f5f9;
+    background-color: #526add;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.prev-month-data {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+    #fullpage .section.prev-month-data .section-header {
+      text-align: center;
+      line-height: 8rem;
+      margin: 0;
+      font-size: 4rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.prev-month-data .section-header {
+          padding-top: 0;
+          font-size: 3rem; } }
+    #fullpage .section.prev-month-data .gzh-shaidan-link {
+      color: #FFD700;
+      font-size: 2rem; }
+    #fullpage .section.prev-month-data .shaidan .bidno {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      display: inline-block;
+      box-shadow: 1px 0 0 0 #f7f5f9, 0 1px 0 0 #f7f5f9, 1px 1px 0 0 #f7f5f9, 1px 0 0 0 #f7f5f9 inset, 0 1px 0 0 #f7f5f9 inset;
+      width: 10%; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.prev-month-data .shaidan .bidno {
+          width: 20%;
+          padding-top: 0px;
+          padding-bottom: 0px; } }
+      #fullpage .section.prev-month-data .shaidan .bidno.zhongbiao-highlight {
+        box-shadow: inset 0px 0px 0px 4px yellow; }
+    #fullpage .section.prev-month-data .shaidan .zhongbiao {
+      background-color: #FF5000; }
+    #fullpage .section.prev-month-data .shaidan .chedan {
+      background-color: grey; }
+    #fullpage .section.prev-month-data .shaidan .preBid {
+      color: #FFD700;
+      font-size: 3rem; }
+    #fullpage .section.prev-month-data .shaidan-shuoming {
       color: #f7f5f9;
-      background-color: #526add; }
-      #fullpage .section.prev-month-data .section-header {
-        color: #f7f5f9; }
-      #fullpage .section.prev-month-data .shaidan .zhongbiao {
+      font-size: 2rem; }
+      #fullpage .section.prev-month-data .shaidan-shuoming .zhongbiao-percen {
+        font-size: 3rem; }
+      #fullpage .section.prev-month-data .shaidan-shuoming .zhongbiao {
+        padding-left: 4rem;
         background-color: #FF5000; }
-      #fullpage .section.prev-month-data .shaidan .chedan {
+      #fullpage .section.prev-month-data .shaidan-shuoming .zhongbiao-highlight {
+        margin-left: 1.5rem;
+        padding-left: 4rem;
+        box-shadow: inset 0px 0px 0px 5px yellow; }
+      #fullpage .section.prev-month-data .shaidan-shuoming .chedan {
+        margin-left: 1.5rem;
+        padding-left: 4rem;
         background-color: grey; }
-      #fullpage .section.prev-month-data .shaidan .shaidan-shuoming {
-        color: #f7f5f9;
-        font-size: 2rem; }
-        #fullpage .section.prev-month-data .shaidan .shaidan-shuoming .zhongbiao {
-          padding-left: 4rem;
-          background-color: #FF5000; }
-        #fullpage .section.prev-month-data .shaidan .shaidan-shuoming .zhongbiao-highlight {
-          margin-left: 2rem;
-          padding-left: 4rem;
-          box-shadow: inset 0px 0px 0px 5px yellow; }
-        #fullpage .section.prev-month-data .shaidan .shaidan-shuoming .chedan {
-          margin-left: 2rem;
-          padding-left: 4rem;
-          background-color: grey; }
-      #fullpage .section.prev-month-data .shaidan .preBid {
+      #fullpage .section.prev-month-data .shaidan-shuoming .description {
+        font-size: 1.5rem; }
+    #fullpage .section.prev-month-data .zhongbiao-jietu .zhongbiao-jietu-shuoming {
+      text-align: center; }
+      #fullpage .section.prev-month-data .zhongbiao-jietu .zhongbiao-jietu-shuoming .postBid {
         color: #FFD700;
         font-size: 3rem; }
-      #fullpage .section.prev-month-data .zhongbiao-jietu .zhongbiao-jietu-shuoming {
+    #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-container {
+      width: 100%;
+      overflow: visible; }
+    #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: auto; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-slide {
+          width: 30rem !important; } }
+      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-slide.swiper-slide-active.zhongbiao-highlight {
+        outline: 4px solid yellow; }
+  #fullpage .section.history {
+    color: #f7f5f9;
+    background-color: #69d3c2;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.history {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+    #fullpage .section.history .section-header {
+      text-align: center;
+      line-height: 8rem;
+      margin: 0;
+      font-size: 4rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.history .section-header {
+          padding-top: 0;
+          font-size: 3rem; } }
+    #fullpage .section.history .historyshow {
+      color: black;
+      border-radius: 10px;
+      font-size: 2rem;
+      background-color: #f7f5f9;
+      text-align: center; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.history .historyshow {
+          border-radius: 0; } }
+      #fullpage .section.history .historyshow th {
         text-align: center; }
-        #fullpage .section.prev-month-data .zhongbiao-jietu .zhongbiao-jietu-shuoming .postBid {
-          color: #FFD700;
-          font-size: 3rem; }
-      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-container {
-        width: 100%;
-        overflow: visible; }
-      #fullpage .section.prev-month-data .zhongbiao-jietu .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 450px;
-        height: 310px; }
-    #fullpage .section.history {
-      background-color: #69d3c2; }
-      #fullpage .section.history .historyshow {
-        color: black;
-        border-radius: 10px;
-        font-size: 2rem;
-        background-color: #f7f5f9;
-        text-align: center; }
-        #fullpage .section.history .historyshow th {
-          text-align: center; }
-      #fullpage .section.history .history-comment {
-        text-align: center;
-        color: #f7f5f9;
-        font-size: 2rem; }
+    #fullpage .section.history .history-comment {
+      text-align: center;
+      color: #f7f5f9;
+      font-size: 2rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.history .history-comment {
+          font-size: 1rem; } }
+  #fullpage .section.contact_us {
+    color: #617be5;
+    background-color: #f7f5f9;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.contact_us {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+    #fullpage .section.contact_us .section-header {
+      text-align: center;
+      line-height: 8rem;
+      margin: 0;
+      font-size: 4rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.contact_us .section-header {
+          padding-top: 0;
+          font-size: 3rem; } }
     #fullpage .section.contact_us table.quick_link {
       margin: 0 auto;
       text-align: center; }
@@ -191,9 +369,15 @@ html {
         color: #f7f5f9 !important;
         padding-left: 5px; }
     #fullpage .section.contact_us .phone a {
+      background-color: #69d3c2;
+      color: #f7f5f9;
+      text-decoration: none;
       font-size: 1.5rem;
       background-color: #69d3c2; }
     #fullpage .section.contact_us .taobao a {
+      background-color: #69d3c2;
+      color: #f7f5f9;
+      text-decoration: none;
       background-color: #FF5000; }
     #fullpage .section.contact_us .gzh img {
       width: 12rem;
@@ -201,10 +385,10 @@ html {
     #fullpage .section.contact_us .wxh img {
       widtH: 12rem;
       height: 12rem; }
-    #fullpage .section footer {
-      color: #617be5;
-      text-align: center;
-      background-color: #f7f5f9; }
+  #fullpage .section footer {
+    color: #617be5;
+    text-align: center;
+    background-color: #f7f5f9; }
 
 /*********************************************************************************
 Icons
@@ -212,9 +396,6 @@ Icons
 /* Generated by http://responsive-css.spritegen.com Responsive CSS Sprite Generator */
 .icons_balance, .icons_magic, .icons_saving, .icons_showbids, .icons_software,
 .icons_super, .icons_vip {
-  width: 128px;
-  height: 128px;
-  display: inline-block;
   max-width: 100%;
   background-size: 100%;
   background-image: url("images/icons.png"); }
