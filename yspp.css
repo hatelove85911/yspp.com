@@ -243,7 +243,7 @@ html {
       color: #FFD700;
       font-size: 2rem; }
     #fullpage .section.prev-month-data .shaidan .bidno {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       padding-top: 4px;
       padding-bottom: 4px;
       display: inline-block;
@@ -256,6 +256,9 @@ html {
           padding-bottom: 0px; } }
       #fullpage .section.prev-month-data .shaidan .bidno.zhongbiao-highlight {
         box-shadow: inset 0px 0px 0px 4px yellow; }
+        @media only screen and (max-width: 767px) {
+          #fullpage .section.prev-month-data .shaidan .bidno.zhongbiao-highlight {
+            box-shadow: inset 0px 0px 0px 2px yellow; } }
     #fullpage .section.prev-month-data .shaidan .zhongbiao {
       background-color: #FF5000; }
     #fullpage .section.prev-month-data .shaidan .chedan {
