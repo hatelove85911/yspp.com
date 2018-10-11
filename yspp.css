@@ -19,8 +19,7 @@ html {
     position: relative;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    height: 95%;
-    min-height: 95%; }
+    height: calc(100% - 20px); }
     @media only screen and (max-width: 767px) {
       #fullpage .section.home {
         padding-top: 2rem;
@@ -50,11 +49,46 @@ html {
         color: #00b8cd;
         line-height: 6rem; }
     #fullpage .section.home .cover {
+      background-image: url("images/cover.jpg");
       width: 100%;
       height: calc(100% - 30rem);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat; }
+  #fullpage .section.features-mobile {
+    color: #f7f5f9;
+    background-color: #526add;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      #fullpage .section.features-mobile {
+        padding-top: 2rem;
+        padding-bottom: 2rem; } }
+    #fullpage .section.features-mobile .section-header {
+      text-align: center;
+      line-height: 8rem;
+      margin: 0;
+      font-size: 4rem; }
+      @media only screen and (max-width: 767px) {
+        #fullpage .section.features-mobile .section-header {
+          padding-top: 0;
+          font-size: 3rem;
+          line-height: 5rem; } }
+    #fullpage .section.features-mobile .feature {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 2px;
+      margin-right: 2px;
+      background-color: #526add;
+      color: #f7f5f9;
+      border-radius: 10px;
+      margin-bottom: 2px;
+      line-height: 8rem; }
+      #fullpage .section.features-mobile .feature .icons {
+        margin-left: 5px;
+        width: 8rem; }
   #fullpage .section.features {
     color: #f7f5f9;
     background-color: #526add;
@@ -76,13 +110,17 @@ html {
           font-size: 3rem;
           line-height: 5rem; } }
     #fullpage .section.features .feature {
-      height: 45rem;
+      height: 60rem;
       padding-top: 2rem;
       padding-bottom: 2rem;
       text-align: center;
       color: #f7f5f9;
       background-color: #69d3c2;
       border-radius: 10px; }
+      #fullpage .section.features .feature .icons {
+        width: 128px;
+        height: 128px;
+        margin: auto; }
       #fullpage .section.features .feature .feature-title {
         font-size: 4rem; }
       #fullpage .section.features .feature .feature-desc {
@@ -171,6 +209,10 @@ html {
           line-height: 5rem; } }
     #fullpage .section.plans .plan-wrapper {
       text-align: center; }
+      #fullpage .section.plans .plan-wrapper .icons {
+        width: 128px;
+        height: 128px;
+        margin: auto; }
       #fullpage .section.plans .plan-wrapper .plan {
         color: #f7f5f9;
         background-color: #526add;
