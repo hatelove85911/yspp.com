@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>header show</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover,shrink-to-fit=no" />
+	<link href="css/font-family.css" rel="stylesheet" type="text/css" />
+	<style>
+		html,
+		body {
+			background-color: #fff;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="stage" width="1920" height="288" style="width:100%;"></canvas>
+	<script src="js/polyfill.js"></script>
+	<script src="lib/easeljs-0.8.2.min.js"></script>
+	<script src="lib/tweenjs-0.6.2.min.js"></script>
+	<script src="js/header-show.js"></script>
+	<script>
+		header_show.init().start();
+	</script>
+</body>
+
+</html>
