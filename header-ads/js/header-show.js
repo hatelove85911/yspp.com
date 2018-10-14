@@ -184,10 +184,10 @@
             },
             createMjolnir: function () {
                 var img = new Image();
-                img.src = 'imgs/mjolnir-2.png';
+                img.src = 'header-ads/imgs/mjolnir-2.png';
 
                 this.mjolnir = new createjs.Container();
-                var mjolnir = new createjs.Bitmap("imgs/mjolnir.png");
+                var mjolnir = new createjs.Bitmap("header-ads/imgs/mjolnir.png");
 
                 var yu = new createjs.GradientText("羽", "32px hdjxyt15156e62ba1e4a0", "#efdf6c");
                 var shan = new createjs.GradientText("山", "30px hdjxyt15156e62ba1e4a0", "#efdf6c");
@@ -298,7 +298,7 @@
             },
             createCracked: function () {
                 // 地面裂纹
-                this.cracked = new createjs.Bitmap("imgs/cracked.png");
+                this.cracked = new createjs.Bitmap("header-ads/imgs/cracked.png");
                 this.cracked.regX = 0;
                 this.cracked.regY = 0;
                 this.cracked.alpha = 0;
