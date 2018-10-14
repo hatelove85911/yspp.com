@@ -243,7 +243,8 @@ html {
     background-color: #f7f5f9;
     position: relative;
     padding-top: 5rem;
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    padding-top: 0; }
     @media only screen and (max-width: 767px) {
       #fullpage .section.process {
         padding-top: 2rem;
