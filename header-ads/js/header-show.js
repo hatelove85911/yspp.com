@@ -184,10 +184,10 @@
             },
             createMjolnir: function () {
                 var img = new Image();
-                img.src = 'header-ads/imgs/mjolnir-2.png';
+                img.src = 'imgs/mjolnir-2.png';
 
                 this.mjolnir = new createjs.Container();
-                var mjolnir = new createjs.Bitmap("header-ads/imgs/mjolnir.png");
+                var mjolnir = new createjs.Bitmap("imgs/mjolnir.png");
 
                 var yu = new createjs.GradientText("羽", "32px hdjxyt15156e62ba1e4a0", "#efdf6c");
                 var shan = new createjs.GradientText("山", "30px hdjxyt15156e62ba1e4a0", "#efdf6c");
@@ -298,7 +298,7 @@
             },
             createCracked: function () {
                 // 地面裂纹
-                this.cracked = new createjs.Bitmap("header-ads/imgs/cracked.png");
+                this.cracked = new createjs.Bitmap("imgs/cracked.png");
                 this.cracked.regX = 0;
                 this.cracked.regY = 0;
                 this.cracked.alpha = 0;
@@ -307,7 +307,7 @@
 
                 // 遮罩
                 var shape = new createjs.Shape();
-                shape.graphics.beginFill("#fff").drawRect(0, 0, 350, 350);
+                shape.graphics.beginFill("#f7f5f9").drawRect(0, 0, 350, 350);
                 shape.x = 100;
                 shape.y = this.stageH - 160;
 
@@ -363,6 +363,7 @@
 
                     setTimeout(function (_this) {
                         _this.particals.forEach(function (o, i) {
+                            var n = i<50?i:50;
                             o.p.graphics.beginFill("#efdf6c").drawCircle(0, 0, 1, 1).endFill();
                             var scale = Math.random() * 5 + 1;
                             createjs.Tween.get(o.p).to({
@@ -371,7 +372,10 @@
                                 scaleX: scale,
                                 scaleY: scale,
                                 alpha: 0
-                            }, Math.random() * (i * 100) + (i * 100), createjs.Ease.elasticOut);
+                            },  Math.random() * (n * 100) + (n * 100), createjs.Ease.quintOut)
+                            .call(function(){
+                                _this.stage.removeChild(o.p);
+                            });
                         }, _this)
                     }, 600, this)
                 }
