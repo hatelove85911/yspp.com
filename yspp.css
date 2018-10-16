@@ -18,8 +18,7 @@ html {
     background-color: #f7f5f9;
     position: relative;
     padding-top: 5rem;
-    padding-bottom: 5rem;
-    height: calc(100% - 20px); }
+    padding-bottom: 5rem; }
     @media only screen and (max-width: 767px) {
       #fullpage .section.home {
         padding-top: 2rem;
@@ -48,13 +47,6 @@ html {
       #fullpage .section.home .slogan .cycleSlogan, #fullpage .section.home .slogan .typed-cursor {
         color: #00b8cd;
         line-height: 6rem; }
-    #fullpage .section.home .cover {
-      background-image: url("images/cover.jpg");
-      width: 100%;
-      height: calc(100% - 20px);
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat; }
   #fullpage .section.features-mobile {
     color: #f7f5f9;
     background-color: #526add;
@@ -264,6 +256,7 @@ html {
       display: flex;
       align-items: center; }
       #fullpage .section.process .processWrapper .step {
+        position: relative;
         flex-grow: 3;
         text-align: center; }
         #fullpage .section.process .processWrapper .step .desc {
